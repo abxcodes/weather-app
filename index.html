@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="key.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>weather app</title>
+    <script src="https://kit.fontawesome.com/756a7f5104.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+    <source src="./video/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+    <main>
+    <div class="wrapper">
+        <h1 class="mt-1 ms-2 text-black"> Weather forcast <i class="fa-solid fa-cloud-sun-rain"></i></h1>
+        <div class="input-part">
+            <div class="ui-info"></div>
+            <input class="input" type="text" placeholder="Search a city">
+            <button class="search" >Search</button>
+            <button class="locate" >My Location</button>
+        </div>
+        <div class="info-part">
+            <p class="city-name"></p>
+              <p class="temp"></p>
+            </div>
+         
+            
+            <div class="bottom-info">
+                <p class="feels"></p>
+                <p class="hum"></p><br>
+            
+                <p class="highTEMP  "></p><br>
+
+                <p class=" MinT"></p><br>
+
+                <p class="pressu"></p> <br>
+                <p class="visibl"></p>
+               
+
+            
+
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

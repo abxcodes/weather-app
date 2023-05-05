@@ -1,106 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Tilt+Prism&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Tilt+Prism&display=swap');
-
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
+
+main {
     position: relative;
     z-index: 2;
 }
+
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
     z-index: 1;
-  }
-.wrapper{
+}
+
+.wrapper {
     background-color: rgba(12, 12, 12, 0.379);
 }
-.wrapper h1{
+
+.wrapper h1 {
     color: rgb(55 56 51);
     border-bottom: 1px solid #f1dcdc;
     padding: 10px;
-    margin: 2px;
+    margin: 1px;
 }
-.wrapper .input-part{
+
+.wrapper .input-part {
     margin: 40px;
- 
+
 }
-.wrapper .input-part :where(button,input){
-    width: 100%;
+
+.wrapper .input-part :where(input) {
+    width: 98%;
     border: none;
     padding: 10px;
     border-radius: 5px;
 }
-.wrapper .input-part input{
+
+.wrapper .input-part input {
     margin-bottom: 5px;
     background-color: rgb(236 207 207 / 87%);
 }
-.wrapper .input-part button{
-    background-color: rgb(117 99 86);
-    color: white;
+
+.wrapper .input-part button {
+        background-color: rgb(117 99 86 / 56%);
+    color: #ffffffe0;
     cursor: pointer;
-}
-.wrapper .input-part .ui-info{
-    width: 100%;
+    width: 55%;
+    height: 34px;
     border: none;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
-.wrapper .input-part .ui-info.pending{
+
+.wrapper .input-part .ui-info {
+
+    width: 98%;
+    height: 33px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #ffffffe3;
+}
+
+.wrapper .input-part .ui-info.pending {
     background-color: rgb(134 121 112 / 64%);
-    
+
 }
-.wrapper .input-part .ui-info.error{
+
+.wrapper .input-part .ui-info.error {
     background-color: rgb(228, 42, 18);
-    
+
 }
-.search{
+
+.search {
     margin-bottom: 10px;
     width: 80px;
     height: 40px;
 }
-.wrapper .info-part{
+
+.wrapper .info-part {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: none;
 }
-.wrapper .info-part.active{
+
+.wrapper .info-part.active {
     display: flex;
 }
-.info-part .city-name{
+
+.city-name {
     font-family: 'Racing Sans One', cursive;
     font-size: 20px;
     color: rgb(231, 219, 219);
- 
-    font-weight:bold;
+    margin-top: -35px;
+
+    font-weight: bold;
     font-size: 2.4rem;
-    padding: .2rem ;
-    
+    padding: .2rem;
+
 }
-.temp{
+
+.temp {
     font-size: 3.3rem;
     font-weight: bold;
-    padding:2rem;
+    padding: 2rem;
     color: #e7dbdb;
     border-bottom: 2px dashed black;
+    margin-top: -13px;
+
 }
-.feels{
+
+.feels {
     font-weight: bold;
-    font-size: 1.1rem;
-    padding:1rem;
-    border-bottom: 1px solid #ccc;
-    width:100%;
+    font-size: 1.4rem;
+    padding: 1rem;
+    width: 100%;
     text-align: center;
 }
 
@@ -110,17 +139,14 @@ main{
     font-weight: bold;
     font-size: 1.1rem;
     text-align: center;
-    background-color: rgb(78 76 72 / 39%);
+    background-color: rgb(31 30 27 / 45%);
     padding: 10px;
     border-radius: 25px;
     color: #e3daccbf;
 }
+
 .bottom-info p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-style: italic;
 }
-
-
-
-

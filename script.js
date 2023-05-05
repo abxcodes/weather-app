@@ -74,23 +74,23 @@ function weather(info) {
         infoPart.classList.add("active");
         cityName2.textContent = info.name;
 
-        temp.innerHTML = `${Math.round(info.main.temp - 272.15)}${celcius}`;
+        temp.innerHTML = ` ${Math.round(info.main.temp - 272.15)}${celcius}`;
         feels.textContent = `FEELS LIKE:  ${Math.round(
             info.main.feels_like - 272.15
         )}${celcius}`;
  
-        highTEMP.innerHTML = `Maximum temperature:  ${Math.round(
+        highTEMP.innerHTML = `<i class="fa-solid fa-temperature-high fa-1x"></i> Maximum temperature:  ${Math.round(
             info.main.temp_max - 273.15
         )}${celcius}`;
 
-        MinT.innerHTML = `Minimum temperature:  ${Math.round(
+        MinT.innerHTML = `<i class="fa-solid fa-temperature-high fa-1x"></i> Minimum temperature:  ${Math.round(
             info.main.temp_min - 273.15
         )}${celcius}`;
 
-        hum.innerHTML = `Humidity:  ${info.main.humidity}%`;
+        hum.innerHTML = `<i class="fa-solid fa-droplet fa-1x symb"></i> Humidity:  ${info.main.humidity}%`;
 
-        pressu.innerHTML = `Pressure:  ${info.main.pressure}nb`;
+        pressu.innerHTML = `<i class="fa-solid fa-cloud fa-1x"></i> Pressure:  ${info.main.pressure}hpa`;
 
-        visibl.innerHTML = `Visibility: ${Math.round(info.visibility / 1000)}km`;
+        visibl.innerHTML = `<i class="fa-solid fa-wind fa-1x symb"></i> Visibility: ${Math.round(info.visibility / 1000)}km`;
     }
 }
